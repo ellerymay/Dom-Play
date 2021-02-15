@@ -15,7 +15,7 @@ function highlightActor(myActor){
 for(const mySpan of spans){
 
     if(mySpan.dataset.actor == myActor){//current actor highlighted
-        mySpan.style.backgroundColor = 'yellow';
+        mySpan.style.backgroundColor = 'red';
         mySpan.style.fontWeight = 'bold';
     }else{//not current actor, no highlight
         mySpan.style.backgroundColor = 'white';
