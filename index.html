@@ -1,38 +1,92 @@
-<html> 
-    <head>
-        <link rel="stylesheet" href="css/dom.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <title>Dom Play</title>
-    </head>
-<body>
-    <h1>Dom Play</h1>
-
-    <header>
-        <nav class="topnav" id="clickSpans">
-             <p><span data-actor="james">James</span></p>
-             <p><span data-actor="spiderman">Spiderman</span></p>
-             <p><span data-actor="batman">Batman</span></p>
-        </nav>
- </header>
-
- <main class = "wrapper">
-
-    <div id="clickSpans">
-    <p><span data-actor="james">James: I have a mission for you guys today!</span></p>
-    <p><span data-actor="spiderman">Spiderman: Are you ready Batman</span></p>
-    <p><span data-actor="batman">Batman: When are we rolling out i have been waiting for a mission?</span></p>
- 
-
-    <footer>
-        <p><small>&copy; 2021 by <a href="contact.php">Contact Yosuof</a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
-      </footer>
- </main>
-
-
-
-    <script src="js/dom.js"></script>
-
-</body>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Title goes here</title>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <style>
+    /* div#play span{
+      background-color: yellow;
+    } */
+  </style>
+ </head>
+ <body>
+     <header>
+     <h1>DOM Play</h1>
+     </header>
+     
+   <main class="wrapper">
+    <p>This page uses JavaScript to allow a user to click on the name of an actor and highlight their lines in a play. This page uses data-attributes and loops through and an anonymous function to loop through a nodelist and compare data-attributes to highlight or unhighlight text.</p>
+     <div id="play">
+      <p>195 EXT. MUSTAFAR-LANDING PLATFORM-DAY</p>
+      <p>The sleek NABOO SKIFF lands on the Mustafar landing platform near Anakin's GREEN STARFIGHTER. ANAKIN runs up to the SKIFF as the ramp lowers. PADME runs to him.</p>
+      <p><span data-actor="anakin">ANAKIN: Padme, I saw your ship. . .</span></p>
+      <p>They embrace.</p>
+      <p><span data-actor="padme">PADME: Oh, Anakin!</span></p>
+      <p><span data-actor="anakin">ANAKIN: It's all right, you're safe now. What are you doing out here?</span></p>
+      <p><span data-actor="padme">PADME: I was so worried about you. Obi-Wan told me terrible things.</span></p>
+      <p><span data-actor="anakin">ANAKIN: What things?</span></p>
+      <p><span data-actor="padme">PADME: He said you have turned to the dark side . . . that you killed younglings.</span></p>
+      <p><span data-actor="anakin">ANAKIN: Obi-Wan is trying to turn you against me.</span></p>
+      <p><span data-actor="padme">PADME: He cares about us.</span></p>
+      <p><span data-actor="anakin">ANAKIN: Us??!</span></p>
+      <p><span data-actor="padme">PADME: He knows . . . He wants to help you.</span></p>
+      <p><span data-actor="anakin">ANAKIN: Is Obi-Wan going to protect you? He can't ... he can't help you. He's not strong enough.</span></p>
+      <p><span data-actor="padme">PADME: Anakin, all I want is your love.</span></p>
+      <p><span data-actor="anakin">ANAKIN: Love won't save you, Padme. Only my new powers can do that.</span></p>
+      <p><span data-actor="padme">PADME: At what cost? You are a good person. Don't do this.</span></p>
+      <p><span data-actor="anakin">ANAKIN: I won't lose you the way I lost my mother! I've become more powerful than any Jedi has ever dreamed of and I've done it for you. To protect you.</span></p>
+      <p><span data-actor="padme">PADME: Come away with me. Help me raise our child. Leave everything else behind while we still can.</span></p>
+      <p><span data-actor="anakin">ANAKIN: Don't you see, we don't have to run away anymore. I have brought peace to the Republic. I am more powerful than the Chancellor. I can overthrow him, and together you and I can rule the galaxy. Make things the way we want them to be.</span></p>
+      <p><span data-actor="padme">PADME: I don't believe what I'm hearing . . . Obi-Wan was right. You've changed.</span></p>
+      <p><span data-actor="anakin">ANAKIN: I don't want to hear any more about Obi-Wan. The Jedi turned against me. Don't you turn against me.</span></p>
+      <p><span data-actor="padme">PADME: I don't know you anymore. Anakin, you're breaking my heart. I'll never stop loving you, but you are going down a path I
+      can't follow.</span></p>
+      <p><span data-actor="anakin">ANAKIN: Because of Obi-Wan?</span></p>
+      <p><span data-actor="padme">PADME: Because of what you've done . . . what you plan to do. Stop, stop now. Come back! I love you.</span></p>
+      <p><span data-actor="anakin">ANAKIN: (seeing Obi-Wan) Liar!</span></p>
+      <p>PADME turns around and. sees OBI-WAN standing in the doorway of the Naboo Cruiser.</p>
+      <p><span data-actor="padme">PADME: No!</span></p>
+      <p><span data-actor="anakin">ANAKIN: You're with him. You've betrayed me! You brought him here to kill me!</span></p>
+      <p><span data-actor="padme">PADME: NO! Anakin. I swear ... I ...</span></p>
+      <p>ANAKIN reaches out, and PADME grabs her throat as she starts to choke.</p>
+      <p><span data-actor="obi-wan">OBI-WAN: Let her go, Anakin.</span></p>
+      <p><span data-actor="anakin">ANAKIN: What have you and she been up to?</span></p>
+      <p><span data-actor="obi-wan">OBI-WAN: Let her go!</span></p>
+      <p>ANAKIN releases his grip on the unconscious PADME and she crumples to the ground.</p>
+      <p><span data-actor="anakin">ANAKIN: You turned her against me.</span></p>
+      <p><span data-actor="obi-wan">OBI-WAN: You have done that yourself.</span></p>
+      <p><span data-actor="anakin">ANAKIN: You will not take her from me.</span></p>
+      <p>ANAKIN throws off his cloak.</p>
+      <p><span data-actor="obi-wan">OBI-WAN: Your anger and your lust for power have already done that.</span></p>
+      <p>OBI-WAN flings off his cloak.</p>
+      <p><span data-actor="obi-wan">OBI-WAN: (continuing) You have allowed this Dark Lord to twist your mind until now . . . until now you have become the very thing you swore to destroy.</span></p>
+      <p>They circle each other until OBI-WAN is near PADME. He places his hand on her.</p>
+      <p><span data-actor="anakin">ANAKIN: Don't lecture me, Obi-Wan. I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, justice, freedom, and security to my new Empire.</span></p>
+      <p><span data-actor="obi-wan">OBI-WAN: Your new Empire?</span></p>
+      <p><span data-actor="anakin">ANAKIN: Don't make me kill you.</span></p>
+      <p><span data-actor="obi-wan">OBI-WAN: Anakin, my allegiance is to the Republic ... to democracy.</span></p>
+      <p><span data-actor="anakin">ANAKIN: If you're not with me, you're my enemy.</span></p>
+      <p><span data-actor="obi-wan">OBI-WAN: Only a Sith Lord deals in absolutes. I will do what I must.</span></p>
+      <p>(ignites his lightsaber)</p>
+      <p><span data-actor="anakin">ANAKIN: You will try.</span></p>
+      <p>ANAKIN ignites his lightsaber.</p>
+      <p>ANAKIN lashes out at OBI-WAN, and they begin a ferocious sword fight. ANAKIN throws CONTAINERS at OBI-WAN using the Force.
+        They work their way off the landing platform and into the main entry hallway. ANAKIN kicks OBI-WAN, and OBI-WAN drops to a lower level.
+        ARTOO BEEPS his concern and rushes to the unconscious PADME's aid.</p>
+     </div>
+     <footer>
+      <p><small>&copy; 2021 by 
+          YOUR NAME HERE, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+  </main>
+  <script src="js/dom-play.js"></script>
+  <script src="js/main.js"></script>
+ </body>
 </html>
-
- 
